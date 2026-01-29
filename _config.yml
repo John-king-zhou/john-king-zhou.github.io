@@ -1,4 +1,4 @@
-# theme: jekyll-theme-minimal
+theme: jekyll-theme-minimal
 # Basic Information 
 title: Zhengqing Zhou
 position: Ph.D. Student
@@ -17,11 +17,3 @@ google_scholar: https://scholar.google.com/citations?user=wX--K3cAAAAJ&hl=en
 cv_link: assets/Resume_Zhou.pdf
 github_link: https://github.com/John-king-zhou
 linkedin: https://www.linkedin.com/in/zhengqing-zhou-47bb6a2b8/
-
-# Font
-# You can use this option to choose between Serif or Sans Serif fonts.
-font: "Serif" # or "Sans Serif"
-
-# Use this project as a remote theme for GitHub Pages
-# See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
-remote_theme: yaoyao-liu/minimal-light
