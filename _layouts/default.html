@@ -1,0 +1,56 @@
+---
+---
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="{{ site.description | default: '' }}">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        {% if site.logo %}
+          <img src="{{ site.logo | relative_url }}" alt="logo" style="max-width:160px;border-radius:12px;">
+        {% endif %}
+
+        <h1>{{ site.title }}</h1>
+
+        {% if site.position or site.affiliation %}
+          <p>
+            {% if site.position %}{{ site.position }}{% endif %}
+            {% if site.position and site.affiliation %}<br>{% endif %}
+            {% if site.affiliation %}{{ site.affiliation }}{% endif %}
+          </p>
+        {% endif %}
+
+        {% if site.email %}
+          <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        {% endif %}
+
+        <p>
+          {% if site.google_scholar %}<a href="{{ site.google_scholar }}">Google Scholar</a><br>{% endif %}
+          {% if site.cv_link %}<a href="{{ site.cv_link | relative_url }}">CV</a><br>{% endif %}
+          {% if site.github_link %}<a href="{{ site.github_link }}">GitHub</a><br>{% endif %}
+          {% if site.linkedin %}<a href="{{ site.linkedin }}">LinkedIn</a><br>{% endif %}
+        </p>
+
+        {% if site.description %}
+          <p>{{ site.description }}</p>
+        {% endif %}
+      </header>
+
+      <section>
+        {{ content }}
+      </section>
+
+      <footer>
+        <p><small>© {{ site.time | date: "%Y" }} {{ site.title }}</small></p>
+      </footer>
+    </div>
+  </body>
+</html>
