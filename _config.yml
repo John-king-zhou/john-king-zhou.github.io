@@ -1,0 +1,19 @@
+theme: jekyll-theme-minimal
+# Basic Information 
+title: Zhengqing Zhou
+position: Ph.D. Student
+affiliation: Duke University
+email: zz294@duke.edu
+
+# Search Engine Optimization (SEO)
+# The following information is used to improve the website traffic from search engines, e.g., Google.
+keywords: Zhengqing Zhou
+description: Zhengqing's personal homepage.
+
+logo: /assets/img/selfie.jpeg
+
+# Links 
+google_scholar: https://scholar.google.com/citations?user=wX--K3cAAAAJ&hl=en
+cv_link: assets/Resume_Zhou.pdf
+github_link: https://github.com/John-king-zhou
+linkedin: https://www.linkedin.com/in/zhengqing-zhou-47bb6a2b8/
